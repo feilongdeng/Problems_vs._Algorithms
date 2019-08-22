@@ -1,0 +1,12 @@
+In class Trie, initializing this Trie by adding a root node from the class TrieNode, then adding words to the Trie by applying a for loop. 
+In the find function, I also use a for loop to find the Trie node that represents this prefix.
+
+In the class TrieNode, initializing this node in the Trie, checking if the node represent the end of the word. In the suffixes function,
+create a array suflist, recursing the find_suffixes function, and returning the suflist. In the find_suffixes function, creating 
+current_suffix by using the join function. Updating the suffix list if a complete word is found. During this time I use a for loop.
+
+Time complexity: O(n). In the Trie class, the insert function has O(n) time complexity because of the for loop. And O(n) in the find function.
+Later in the TrieNode class, the suffixes function has O(n) because of the for loop. Therefore, combining all together the time complexity is 
+O(n).
+
+Space complexity: O(M*N). space complexity depends of the number of words (let's call them M) and the length of those words (let's call the average length of the word N) Therefore the total space consumed in a trie is M*N

@@ -1,0 +1,6 @@
+In order to run the code in O(n) time, I use a for loop to check all the elements in the ints. First, initializing the minimum and maximum as 
+the first element of the array. Then in a for loop, I can find the smallest element if the number inside the ints is less than 
+the initial smallest element, I also can find the largest element by giving the number inside the ints is greater than the initial 
+maximum. Last, return the smallest element and largest element.
+Time complexity: O(n), because in the for loop, it checks all the elements in the ints, then found the smallest element and largest element. 
+Space complexity: O(1). well the outputs are actually two numbers: the maximum and the minimum. It doesn't matter how long your input is, the output remains constant 2. The really space complexity is O(1)

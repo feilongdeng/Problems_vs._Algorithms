@@ -1,0 +1,10 @@
+For this problem, I use the binary search. First, I set the left index as 0 and the right index as the last index in the input_list. 
+Then, giving left index less than right index condition of the while loop and setting the middle index and middle element. Later, checking the number to is equal
+to the middle element or not, if yes, return the middle index, otherwise, analyzing the middle element in three conditions.
+In condition 1, the value of the middle element is between the first and last element of the input list, changing the left index to middle index if the number is
+greater than the middle element, otherwise, replacing the right index as middle index. In condition 2, the middle element is both greater than the left element and 
+the right element. If the given number is greater than the left element but less than the right element, replacing the left index as middle index, otherwise, replacing
+the right index as middle index. Last, checking the bound value. 
+
+Time complexity: O(log(n)). For the binary search, the time complexity is O(log(n)).
+Space complexity: O(1). This is because this solution only single value holding  variables were used in the function, hence the worst-case space complexity would be constant O(1).

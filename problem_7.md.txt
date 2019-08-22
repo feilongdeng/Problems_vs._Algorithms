@@ -1,0 +1,17 @@
+In class RoutTrie:
+First initializing the trie with an root node and a handler. Inside the insert function, spliting the path into sub paths with "/". 
+Checking whether the sub path is in the dictionary of the RouteTrieNode, if yes, proceeding to the child RouteTrieNode and next sub path.
+Otherwise, the sub path will be added to the dict, then a new RouteTrieNode will be build as the child node of the sub path. 
+For the find function, starting at the root, navigate the Trie to find a match for this path by using a for loop, then return the handler
+ for a match. In the __str__ function, I also design a print_node function by using a for loop.
+
+In class RouteTrieNode: 
+Initializing the node with children plus a handler, building a insert function to insert the node.
+
+In the Router class:
+First, creating a new RouteTrie for holding our routes. Then, adding a handler for a path in the add_handler function. In the lookup
+function, I use the find function as I build before.
+
+Time complexity: O(n). In the RouteTrie class, the insert and find function both contain O(n) because of the for loop. Inside the Router class, the add_handler function and lookup function both have O(n)
+time complexity because the first one uses insert function and the second uses find function to read all the number. Therefore, the total time complexity is O(n).
+Space complexity: O(M*N). space complexity depends of the number of words (let's call them M) and the length of those words (let's call the average length of the word N) Therefore the total space consumed in a trie is M*N

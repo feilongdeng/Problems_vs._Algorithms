@@ -1,0 +1,5 @@
+A good algorithm to rearrange array elements as two numbers but not using any sorting funciton is merge sort. The first step is to use merge sort to sort the 
+array as descending ordered. The time complexity for merge sort is O(nlog(n)). Then, I set two lists from the sorted list. Later, 
+using two for loops to create two string. Last, return these two strings as integes.
+Time complexity: O(nlog(n)). merge sort O(nlog(n)), two for loops O(2n). The total complexity is O(nlog(n) + 2n) = O(n (2+log(n))) --> O(nlog(n)).
+Space complexity: O(n). For the merge sort, the worst space complexity is O(n). Inside the rearrage_digits function the space complexity is O(1). combining these two, the total worst space complexity is O(n).

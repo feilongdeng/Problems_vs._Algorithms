@@ -1,0 +1,8 @@
+In order to qualify the time complexity is O(log(n)), I use the binary search. First, I set lower bound as 0 and
+the upper bound as the original initial guess 10. Then, I use the while loop to increase the upper bound until 
+the square of the upper bound equal to the given number. If the square of the upper bound is equal to the number, we 
+return the initial guess as the right number. Later, I check the midpoint of the lower upper and upper bound, if the square 
+of the midpoint is equal to the number, then returning to the midpoint. Otherwise, changing the midpoint to upper bound 
+or lower bound.
+Time complexity: O(log(n))
+Space complexity: O(1). This is because this solution only single value holding  variables were used in the function, hence the worst-case space complexity would be constant O(1).
